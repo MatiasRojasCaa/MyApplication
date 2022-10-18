@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "766877160911",
+    "firebase_url": "https://appmovilpulso-default-rtdb.firebaseio.com",
+    "project_id": "appmovilpulso",
+    "storage_bucket": "appmovilpulso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766877160911:android:4a0407f1aa9fa44967eeba",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766877160911-ngc4u41k4n464jvovil5n2iughp72jj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5aSGztvDZ9c8jToBc-mtw9eiEzuVCGfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766877160911-ngc4u41k4n464jvovil5n2iughp72jj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
