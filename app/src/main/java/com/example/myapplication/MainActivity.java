@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myapplication.Modelo.Alumno;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -43,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String nombre = etNombre.getText().toString();
                 String apellido = etApellido.getText().toString();
-                String edad = etEdad.getText().toString();
+                int edad = Integer.parseInt(etEdad.getText().toString());
                 String key = UUID.randomUUID().toString();
+                Alumno a = new Alumno(nombre,apellido,edad);
 
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("Alumno").child(key);
-                myRef.child("nombre").setValue(nombre);
-                myRef.child("apellido").setValue(apellido);
-                myRef.child("edad").setValue(edad);
+                DatabaseReference myRef = database.getReference("Alumno");
+                myRef.setValue(a);
+
             }
         });
     }
